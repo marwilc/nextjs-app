@@ -1,6 +1,6 @@
-import React from 'react'
-import { Image, Header } from 'semantic-ui-react'
 import Layout from '@components/Layout/Layout'
+import Link from 'next/link'
+import { Header, Image } from 'semantic-ui-react'
 
 const avoFacts = [
   {
@@ -41,19 +41,19 @@ const AboutPage = () => {
           <Image src="/images/avocados.jpg" alt="Avocados on a table" />
           <figcaption>
             Originally from{' '}
-            <a
+            <Link
               target="_blank"
               href="https://www.tasteofhome.com/article/13-surprising-facts-about-avocados/"
             >
               Taste of Home
-            </a>
+            </Link>
           </figcaption>
         </figure>
         <ol>
           {avoFacts.map(({ title, content }) => (
             <li key={title}>
               <h3 className="ui header">{title}</h3>
-              <p>{content}</p>
+              <div>{content}</div>
             </li>
           ))}
         </ol>

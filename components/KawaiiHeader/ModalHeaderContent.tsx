@@ -1,4 +1,3 @@
-import React from 'react'
 import { Grid, Header } from 'semantic-ui-react'
 
 import { PosMeMuero } from '@components/SVGIcons'
@@ -13,11 +12,11 @@ const ModalHeaderContent = () => {
           </Grid.Column>
           <Grid.Column width="11">
             <Header as="h2">Mataste el aguacate</Header>
-            <p>Lo tocaste tanto que lo mataste.</p>
-            <p>
+            <div>Lo tocaste tanto que lo mataste.</div>
+            <div>
               Por otro lado, eres una persona muy curiosa y has descubierto
               esto. :)
-            </p>
+            </div>
           </Grid.Column>
         </Grid.Row>
       </Grid>

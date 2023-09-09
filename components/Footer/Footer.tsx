@@ -32,24 +32,28 @@ const Footer = () => (
           </Grid.Column>
           <Grid.Column width={7}>
             <Header as="h4">Hecho para</Header>
-            <p>
-              <a href="https://platzi.com/">Platzi y su curso de Next.JS</a> de
-              Platzi dictado por{' '}
-              <a href="https://twitter.com/jonalvarezz">@jonalvarezz</a>
-            </p>
+            <div>
+              <Link href="https://platzi.com/">
+                Platzi y su curso de Next.JS
+              </Link>{' '}
+              de Platzi dictado por{' '}
+              <Link href="https://twitter.com/jonalvarezz">@jonalvarezz</Link>
+            </div>
             <List horizontal style={{ display: 'flex' }}>
               <List.Item
                 icon="twitter"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/jonalvarezz">Twitter</a>}
+                content={
+                  <Link href="https://twitter.com/jonalvarezz">Twitter</Link>
+                }
               />
               <List.Item
                 icon="github"
                 style={{ display: 'flex' }}
                 content={
-                  <a href="https://github.com/jonalvarezz/platzi-nextjs">
+                  <Link href="https://github.com/jonalvarezz/platzi-nextjs">
                     GitHub
-                  </a>
+                  </Link>
                 }
               />
             </List>
@@ -57,39 +61,43 @@ const Footer = () => (
         </Grid.Row>
       </Grid>
       <div className="colophon">
-        <p className="colophon-entry">
+        <div className="colophon-entry">
           Icons made by{' '}
-          <a
+          <Link
             target="_blank"
             href="https://www.flaticon.com/authors/freepik"
             title="Freepik"
           >
             Freepik
-          </a>
+          </Link>
           {' from '}
-          <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">
+          <Link
+            target="_blank"
+            href="https://www.flaticon.com/"
+            title="Flaticon"
+          >
             www.flaticon.com
-          </a>
-        </p>
-        <p className="colophon-entry">
+          </Link>
+        </div>
+        <div className="colophon-entry">
           Avocado images taken from{' '}
-          <a
+          <Link
             className="acnor"
             target="_blank"
             href="https://www.californiaavocado.com/avocado101/avocado-varieties"
             title="California Avocado"
           >
             Avocado 101
-          </a>
+          </Link>
           {' at '}
-          <a
+          <Link
             target="_blank"
             href="https://www.californiaavocado.com"
             title="Flaticon"
           >
             California Avocado
-          </a>
-        </p>
+          </Link>
+        </div>
       </div>
     </Container>
 

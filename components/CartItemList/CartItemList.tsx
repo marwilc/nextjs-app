@@ -1,7 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import { Item, Button, Loader, Message } from 'semantic-ui-react'
 import { CartItemType } from '@store/Cart'
+import Link from 'next/link'
+import { Button, Item, Loader, Message } from 'semantic-ui-react'
 
 type CartItemListProps = {
   items: CartItemType[]
@@ -20,9 +19,9 @@ const CartItemList = ({
     return (
       <Message warning as="section">
         <Message.Header>Your cart is empty</Message.Header>
-        <p>
+        <div>
           You will need to add some items to the cart before you can checkout.
-        </p>
+        </div>
       </Message>
     )
 

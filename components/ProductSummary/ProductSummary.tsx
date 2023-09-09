@@ -1,4 +1,3 @@
-import React from 'react'
 import { Item, Label } from 'semantic-ui-react'
 
 import AddToCart from './AddToCart'
@@ -18,7 +17,7 @@ const ProductSummary = ({ product }: ProductSummaryProps) => (
         <Item.Content>
           <Item.Header as="h1">{product.name}</Item.Header>
           <Item.Description>
-            <p>{product.price}</p>
+            <div>{product.price}</div>
             <Label>{`SKU: ${product.sku}`}</Label>
           </Item.Description>
           <Item.Extra>
